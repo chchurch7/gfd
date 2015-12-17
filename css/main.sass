@@ -1,0 +1,202 @@
+$font-stack: BrownStd
+$primary-color: #333
+$blue: #0064ff
+$white:#fff
+$gray:#f0f3f6
+$charcoal:#40454e
+
+body
+  	font: 100% $font-stack
+  	color: $primary-color
+  	font-size: 12px
+
+.clearfix:before
+    content: " " /* 1 */
+    display: table /* 2 */
+
+.clearfix:after 
+    content: " " /* 1 */
+    display: table /* 2 */
+
+.clearfix:after 
+    clear: both
+
+
+
+/* ========================== nav ======================== */
+header
+	position: fixed
+	background: $white
+	padding: 10px 0px
+	z-index: 100
+	nav
+		padding: 0px 6em
+		@media (max-width: 980px)
+			padding-bottom: 20px
+			padding: 0px 2em
+
+		.logo 
+			display: inline
+			position: relative
+			top: 0.75em
+			img
+				height: 17px
+				@media (max-width: 550px)
+					height: 12px
+		ul
+			float: right
+			position: relative
+			top: 1em
+			@media (max-width: 980px)
+				display: none
+			li
+				display: inline
+				padding-left: 1em
+				a
+					text-decoration: none
+					text-transform: uppercase
+					font-size: 1em
+					color: $blue
+
+
+/* ============================ mobile nav ==================== */
+.mobile-nav
+	display: none
+	@media (max-width: 980px)
+		display: block
+		position: absolute
+		background: $blue
+		width: 100%
+		ul
+			text-align: center
+			list-style: none
+			li
+				padding: 30px 0px;
+				a
+					text-decoration: none
+					text-transform: uppercase
+					font-size: 1em
+					color: $white
+
+
+
+
+
+/* ============================ banner ==================== */
+.banner
+	background: $blue
+	text-align: center
+	padding-top: 60px
+	.container
+		padding: 12em 0px
+		h6
+			font-size: 1em
+			letter-spacing: .2em
+			color: $white
+			text-transform: uppercase
+		h2
+			font-size: 3em
+			margin: 0 auto
+			font-family: georgia
+			max-width: 700px
+			color: $white
+
+
+
+/* ============================ testimonials ==================== */
+.testimonials
+	color: $blue
+	padding: 80px 0px
+	.container
+		max-width: 700px
+		h6
+			font-size: 1em
+			letter-spacing: .2em
+			color: $blue
+			text-transform: uppercase
+			text-align: center
+		.viewmore
+			text-align: center
+			margin-top: 4em
+			button
+				font-family: $font-stack
+				text-transform: uppercase
+				background: $white
+				padding: 15px 40px
+				border: 1px solid $blue
+				letter-spacing: .2em
+				transition: all 0.3s ease 0s
+				&:hover
+					background: $blue
+					color: $white
+
+/* ============================ testimonials carosel ==================== */
+
+.slick-prev, .slick-next 
+    font-size: 0
+    line-height: 0
+    position: absolute
+    top: 50%
+    display: block
+    width: 40px
+    height: 40px
+    padding: 0
+    margin-top: -10px\9
+    -webkit-transform: translate(0, -50%)
+    -ms-transform: translate(0, -50%)
+    transform: translate(0, -50%)
+    cursor: pointer
+    color: rgba(255, 255, 255, 0)
+    border: none
+    outline: none
+    background: rgba(255, 255, 255, 0)
+
+.slick-prev
+	left: -200px
+	background-image: url("../img/arrow-01.svg")
+	background-position: 0 0;
+	background-repeat: no-repeat; 
+
+.slick-next
+	right: -200px
+	background-image: url("../img/arrow-02.svg")
+  	background-position: 0 0;
+	background-repeat: no-repeat;
+
+
+/* ============================ find us ==================== */
+.location
+	background: $gray
+	padding: 80px 0px
+	h6
+		font-size: 1em
+		letter-spacing: .2em
+		color: $blue
+		text-transform: uppercase
+		text-align: center
+		color: $charcoal
+	p
+		text-align: center
+		color: $charcoal
+		font-family: georgia
+		font-size: 18px
+		line-height: 20px
+
+/* ============================ footer ==================== */
+footer
+	background: $charcoal
+	padding: 30px 6em 15px 6em
+	h6
+		font-size: 1em
+		letter-spacing: .2em
+		color: $gray
+		text-transform: uppercase
+		float: left
+	.group
+		h6
+			float: right
+		.facebook
+			float: right
+
+
+
